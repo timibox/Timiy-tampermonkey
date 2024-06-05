@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         Timiy WEB定制化插件
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  定制化各种网页插件
 // @author       Timiy
 // @match        https://chatgpt.com/*
-// @match        https://www.example.com/*
+// @match        https://www.douyu.com/*
 // @match        https://www.anotherwebsite.com/*
 // @grant        GM_addStyle
 // ==/UserScript==
@@ -26,10 +26,10 @@
     }
 
     // example.com 样式
-    if (currentURL.includes('example.com')) {
+    if (currentURL.includes('douyu.com')) {
         GM_addStyle(`
-            #example-element {
-                color: red;
+            .ChargeTask-closeBg.react-draggable {
+                display: none; //播放器左侧广告
             }
         `);
     }
