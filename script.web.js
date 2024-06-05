@@ -31,6 +31,9 @@
             .ChargeTask-closeBg.react-draggable {
                 display: none; //播放器左侧广告
             }
+            .layout-Player-rank {
+                display: none; //屏蔽排行榜
+            }
         `);
     }
 
