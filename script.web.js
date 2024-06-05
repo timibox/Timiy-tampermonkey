@@ -34,6 +34,26 @@
             .layout-Player-rank {
                 display: none; //屏蔽排行榜
             }
+            .layout-Player-announce {
+                display: none; //屏蔽弹幕上方TAB
+            }
+            div#js-room-activity {
+                display: none; //屏蔽右侧活动广告
+            }
+            //竖屏模式样式定制
+            @media screen and (max-width: 1200px) {
+                //上下布局
+                .layout-Player {
+                    display: flex;
+                    flex-direction: column;
+                }
+                .layout-Player-main { //播放器代码
+                    width: 100%;
+                    height: 710px;
+                    z-index: 2;
+                    flex: none;
+                }
+            }
         `);
     }
 
