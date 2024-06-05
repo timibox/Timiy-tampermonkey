@@ -1,9 +1,10 @@
 // ==UserScript==
 // @name         Timiy WEB定制化插件
 // @namespace    http://tampermonkey.net/
-// @version      1.5
+// @version      2.0
 // @description  定制化各种网页插件
 // @author       Timiy
+// @icon         https://ts4.cn.mm.bing.net/th?id=ODLS.59b88440-bd53-4dcc-b9fe-de7e5f7d61a6&w=16&h=16&o=6&pid=1.2
 // @match        https://chatgpt.com/*
 // @match        https://www.douyu.com/*
 // @match        https://live.bilibili.com/*
