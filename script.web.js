@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Timiy WEB定制化插件
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      1.2
 // @description  定制化各种网页插件
 // @author       Timiy
 // @match        https://chatgpt.com/*
@@ -41,7 +41,7 @@
                 display: none; //屏蔽右侧活动广告
             }
             //竖屏模式样式定制
-            @media screen and (max-width: 1200px) {
+            @media screen and (max-width: 1600px) {
                 //上下布局
                 .layout-Player {
                     display: flex;
