@@ -1,13 +1,15 @@
 // ==UserScript==
 // @name         Timiy WEB定制化插件
 // @namespace    http://tampermonkey.net/
-// @version      1.3
+// @version      1.5
 // @description  定制化各种网页插件
 // @author       Timiy
 // @match        https://chatgpt.com/*
 // @match        https://www.douyu.com/*
-// @match        https://www.anotherwebsite.com/*
+// @match        https://live.bilibili.com/*
 // @grant        GM_addStyle
+// @downloadURL https://update.greasyfork.org/scripts/497104/Timiy%20WEB%E5%AE%9A%E5%88%B6%E5%8C%96%E6%8F%92%E4%BB%B6.user.js
+// @updateURL https://update.greasyfork.org/scripts/497104/Timiy%20WEB%E5%AE%9A%E5%88%B6%E5%8C%96%E6%8F%92%E4%BB%B6.meta.js
 // ==/UserScript==
 
 (function () {
@@ -59,6 +61,31 @@
             }
         }
     `);
+    }
+
+    if (currentURL.includes('live.bilibili.com')) {
+        GM_addStyle(`
+           @media screen and (max-width: 1200px) {
+                .player-and-aside-area {
+                    display: flex!important;
+                    flex-direction: column;
+                }
+                .player-section.p-relative {
+                    width: 100%!important;
+                    height: 605px!important;
+                }
+                div#rank-list-vm {
+                    display: none;
+                }
+                .aside-area.p-absolute.border-box {
+                    position: relative!important;
+                    width: 100vw!important;
+                    height: calc(100vh - 427px) !important;
+                    margin-left: -4px;
+                    top: 427px!important;
+                }
+           }
+        `);
     }
 
 
