@@ -13,6 +13,7 @@
 
   // 使用 GM_addStyle 添加自定义CSS
   GM_addStyle(`
+        //定制斗鱼样式
         #js-room-activity {
             display: none;
         }
